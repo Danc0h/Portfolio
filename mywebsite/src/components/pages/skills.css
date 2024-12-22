@@ -1,0 +1,163 @@
+.skills__section {
+  background-color: var(--color-bg);
+}
+.prof__container {
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-bg-variant);
+  border-radius: 0.9rem;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  padding: 0.9rem;
+  color: var(--color-primary);
+}
+
+.prof__container ul {
+  list-style-type: none; /* Remove default list styling */
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Individual list items */
+.prof__container li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: sans-serif;
+  color: #fff;
+  margin: 10px 0;
+}
+
+/* Icon styling for list items */
+.prof__container li::before {
+  content: "✓"; /* Custom checkmark icon */
+  font-size: 1.2rem;
+  color: #4caf50; /* Green color for a professional feel */
+  margin-right: 10px;
+}
+/* General Container Styling */
+.skills__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.skill-container {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  background: var(--color-bg-variant);
+  border-radius: 1rem;
+  border: 1px solid var(--color-primary);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
+}
+
+.skill-container:hover {
+  transform: scale(1.05);
+}
+
+/* Icon and Text Styling */
+.skills__details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skills__details h5 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.text-light {
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+/* Icon Colors */
+.ht-icon {
+  color: #e44d26;
+}
+.cs-icon {
+  color: #1572b6;
+}
+.ph-icon {
+  color: #777bb3;
+}
+.sq-icon {
+  color: #00758f;
+}
+.bo-icon {
+  color: #563d7c;
+}
+.ja-icon {
+  color: #f0db4f;
+}
+.no-icon {
+  color: #68a063;
+}
+.re-icon,
+.ex-icon,
+.da-icon {
+  color: #61dbfb;
+}
+.py-icon {
+  color: #3776ab;
+}
+.dj-icon {
+  color: #092e20;
+}
+.mo-icon {
+  color: #4db33d;
+}
+.fb-icon {
+  color: #ffca28;
+}
+
+.skills__tabs {
+  display: flex;
+  gap: 1rem; /* Space between tabs */
+  justify-content: center;
+  align-items: center; /* Centers the tabs horizontally */
+}
+/* skills.css */
+.skills__tabs button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ddd;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skills__tabs button.active-button {
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: bold;
+}
+
+.skills__tabs button:hover {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .skill-container {
+    padding: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .prof__container li {
+    font-size: 0.9rem;
+  }
+}

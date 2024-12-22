@@ -1,0 +1,58 @@
+.pricing__section {
+    background-color: var(--color-bg);
+}
+
+.pricing__container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,auto);
+    gap: 1.5rem;
+    padding: 0.8rem;
+}
+
+.pricing__item {
+    background-color: var(--color-bg-variant);
+    border: 1px solid var(--color-primary);
+    border-radius: 0.9rem;
+}
+
+.pricing__logo{
+    color:var(--color-primary);
+    padding-left: 47%;
+    padding-top: 2.5rem;
+    width: 2rem;
+    height: 3rem;
+}
+
+.pricing__tags{
+    display: grid;
+    align-items: center;
+    place-items: center;
+}
+
+.pricing__services {
+    display: grid;
+    padding-left: 2rem;
+}
+
+h3 {
+    font-size: 25px;
+    color: #fff;
+}
+ span > h5 {
+    color: #fff;
+}
+    
+.price {
+    color: var(--color-primary);
+}
+
+
+@media (max-width : 500px) {
+    .pricing__container {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 1.5rem;
+        padding: 0.8rem;
+    }
+    }

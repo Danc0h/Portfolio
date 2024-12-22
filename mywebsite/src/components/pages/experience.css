@@ -1,0 +1,84 @@
+.experience_section {
+  background-color: var(--color-bg);
+}
+
+.portfolio__container {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(3, auto);
+  padding: 0.9rem;
+}
+
+.portfolio__item {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-primary);
+}
+
+.portfolio__item h3 {
+  margin: 1.2 rem 0 2rem;
+}
+
+.link_container {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem; /* Space between tabs */
+  margin-bottom: 1.5rem; /* Space below the tabs */
+  flex-wrap: wrap; /* Allows tabs to wrap on smaller screens */
+  justify-content: center; /* Centers the tabs horizontally */
+}
+
+.tab {
+  padding: 0.5rem 1rem; /* Adds space inside the tabs */
+  font-size: 1rem; /* Increases font size for better readability */
+  color: #555; /* Default color */
+  background-color: #f5f5f5; /* Light background for inactive tabs */
+  border: none; /* Removes border */
+  border-radius: 20px; /* Smooth, rounded corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.tab:hover {
+  background-color: #e0e0e0; /* Slightly darker on hover */
+}
+
+.tab.active {
+  color: #fff; /* White text for active tab */
+  background-color: var(--color-primary); /* Primary color for active tab */
+  box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3); /* Subtle shadow for depth */
+}
+
+.project-image {
+  width: 100%; /* Ensures the image takes full width of its container */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 300px; /* Keeps a consistent height for all images */
+  object-fit: cover; /* Crops to fit while maintaining the image’s center */
+  border-radius: 8px; /* Rounds corners slightly for a clean look */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+  margin-bottom: 0.2rem; /* Space between the image and the title or content */
+  transition: transform 0.3s ease; /* Smooth scaling animation on hover */
+}
+
+.portfolio__item:hover .project-image {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+@media (max-width: 600px) {
+  .portfolio__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0.8rem;
+  }
+
+  .tab {
+    font-size: 0.9rem; /* Slightly smaller font on small screens */
+    padding: 0.4rem 0.8rem; /* Smaller padding for compact fit */
+  }
+}

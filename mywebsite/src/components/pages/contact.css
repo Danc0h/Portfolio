@@ -1,0 +1,66 @@
+.contact__section {
+    background-color: var(--color-bg);
+    padding-top: 1.5rem;
+    color: #fff;
+}
+
+.contact__container {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 1.5rem;
+    padding: 0.8rem;
+}
+
+.contact__card {
+    border: 1px solid var(--color-primary);
+    border-radius: 0.9rem;
+    background-color: var(--color-bg-variant);
+}
+
+article {
+    gap: 2.5rem;
+    display: grid;
+    padding: 1.2rem;
+}
+
+.contact__info {
+    display: grid;
+    place-items: center;
+}
+
+
+.email-logo {
+    color: #D3D3D3;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 3rem;
+}
+
+.twitter-logo {
+    color:  #50b7f5;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 3rem;
+}
+
+.phone-logo {
+    color: #90EE90;
+    width: 2.5rem;
+    height: 3rem;
+}
+
+.whats-logo {
+    color:  #25D366;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 3rem;
+}
+
+@media (max-width : 500px) {
+    .contact__container {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 1.5rem;
+        padding: 0.8rem;
+     }
+    }

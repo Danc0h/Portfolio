@@ -1,0 +1,47 @@
+/* Tab Button Styling */
+/* General Styling for the Services Section */
+.services-section {
+  background-color: var(--color-bg);
+  padding: 1.5rem;
+}
+
+.services__content {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Responsive grid layout */
+  gap: 1rem;
+}
+
+.service-tab {
+  background: var(
+    --color-bg-variant
+  ); /* Light background color for the service div */
+  border-radius: 2rem;
+  border: 1px solid var(--color-primary); /* Rounded corners */
+  padding: 1 1 1 1;
+}
+
+.services__head {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.icon-span {
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  margin-left: 0.5rem;
+  font-size: 1.25rem; /* Slightly larger title font size */
+}
+
+/* Paragraph styling */
+p {
+  margin: 0; /* Remove margin to keep a neat layout */
+  line-height: 1.5; /* Better line height for readability */
+  font-family: sans-serif;
+}
